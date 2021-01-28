@@ -1,4 +1,4 @@
-# 210119 Python 기초 문법
+# 210119 Python Data Types
 
 ## Data Container
 
