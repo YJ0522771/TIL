@@ -1,4 +1,4 @@
-# 210127 Python 자료형 Methods
+# 210127 Python 자료형 Methods 1
 
 > 계속 수정 혹은 추가될 예정.
 
@@ -46,8 +46,19 @@
 * `chars`에 지정한 글자를 제거한 문자열을 반환.
 * chars에 문자열이 입력 되면, chars에 있는 글자 중 하나만 존재해도 제거한다. 
 
-```
+```python
+string = '    test_string\n\t'
 
+# 아무 입력도 없으면 공백을 제거
+string.strip()			# 'test_string'
+string.lstrip()			# 'test_string\n\t'
+string.rstrip()			# '    test_string'
+
+string.strip('\t')		# '    test_string\n'
+
+# 입력 된 문자열에 대해 문자 하나하나를 따로 인식히여 제거.
+apple = 'apple'
+apple.strip('aeiou')	# 'ppl'
 ```
 
 
@@ -71,4 +82,37 @@
 # 구분자가 문자열(길이 2 이상)일 경우
 '01020560159'.split('01')	# ['', '02056', '59'], 구분자가 양 끝일 경우 빈 str이 들어간다.
 ```
+
+
+
+#### 6. `'seperator_str'.join(iterable)`
+
+##### `return (str)`
+
+* `iterable`의 요소들을 `seperator`로 구분 짓는 하나의 문자열로 합쳐서 반환.
+
+```python
+a = [1, 2, 3]
+
+# space로 구분
+' '.join(a)				# '1 2 3'
+```
+
+
+
+#### 7. 문자 변형 (`str` 타입은 변형이 불가능하므로 바뀐 `str`를 반환)
+
+* `.capitalize()` : **맨 앞** 문자를 대문자로 변환.
+* `.title()` : **공백**이나 **기호** 직후의 문자를 대문자로 변환.
+* `.upper()` : 문자열의 문자를 **모두 대문자**로 변환.
+*  `.lower()` : 문자열의 문자를 **모두 소문자**로 변환. 
+* `.swapcase()` :  대문자는 소문자로, 소문자는 대문자로 변환.
+
+
+
+#### 8. 문자열 검증 
+
+##### `return (bool)`
+
+`.isalpha()`, `.isdecimal()`, `.isdigit()`, `.isnumeric()`, `.isspace()`, `.isupper()`, `.istitle()`, `.islower()`
 
