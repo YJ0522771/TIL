@@ -1,6 +1,8 @@
-# 210127 Python 자료형 Methods 1
+# 7. Python 자료형 Methods
 
 > 계속 수정 혹은 추가될 예정.
+
+
 
 ## String
 
@@ -115,4 +117,103 @@ a = [1, 2, 3]
 ##### `return (bool)`
 
 `.isalpha()`, `.isdecimal()`, `.isdigit()`, `.isnumeric()`, `.isspace()`, `.isupper()`, `.istitle()`, `.islower()`
+
+
+
+## List
+
+#### 1. `.append(x_element)`
+
+##### `return None`
+
+* 리스트에 값 `x`를 요소로 추가.
+
+
+
+#### 2. `.extend(iterable)`
+
+##### `return None`
+
+* `iterable`을 요소별로 해체하여 리스트에 추가.
+* `string`의 경우 문자별로 해체되어 추가. 
+
+```python
+a = ['a', 'b', 'c']
+
+# string은 문자로 해체되어 추가됨.
+a.extend('defg')
+print(a)				# ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+```
+
+
+
+#### 3. `.insert(index, x_element)`
+
+##### `return None`
+
+* `index`의 위치 (0부터 시작)에 `x`값을 추가.
+* 리스트의 길이를 넘어서는 index를 입력하면 맨 마지막에 추가.
+
+
+
+#### 4. `.remove(x_element)`
+
+##### `return None`, `ValueError`
+
+* 리스트에서 `x` 를 제거.
+* 리스트에 없는 값이 들어오면, `ValueError`.
+* 중복되는 요소가 있으면 **앞에 있는** 하나만 삭제.
+
+
+
+#### 5. `.pop([index])`
+
+##### `return (elememt)`
+
+* `index` 위치에 있는 요소를 **반환**하고 리스트에서 **삭제**.
+* `index` 를 입력하지 않으면, **마지막 요소**를 반환하고 삭제.
+
+
+
+#### 6. `.clear()`
+
+##### `return None`
+
+* 리스트의 **모든 요소** 삭제.
+
+
+
+#### 7. `.index(x_element)`
+
+##### `return (int)`, `ValueError`
+
+* `x` 값의 **인덱스 (0을 기준)**를 반환.
+* 리스트에 x가 중복이면, **앞쪽**의 인덱스를 반환.
+* 리스트에 없는 x가 입력되면, `ValueError`.
+
+
+
+#### 8. `.count(x_element)`
+
+##### `return (int)`
+
+* 리스트에 `x` 가 **몇 개** 있는 지를 반환.
+* 없을 경우 `0` 을 반환.
+
+
+
+#### 9. `.sort()`
+
+##### `return None`
+
+* 리스트의 요소를 크기 순서로 **정렬**.
+
+
+
+#### 10. `.reverse()`
+
+##### `return None`
+
+* 리스트의 순서를, 현재 순서와 **역순**으로 만든다. 
+* 정렬은 아님.
 
