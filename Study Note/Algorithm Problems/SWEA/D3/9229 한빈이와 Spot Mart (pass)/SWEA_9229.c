@@ -2,9 +2,9 @@
 int main(void)
 {
     int test_case;
-	  int T, N, M, a_min, i, j, res, temp;
+	int T, N, M, a_min, i, j, res, temp;
 	
-	  scanf("%d", &T);
+	scanf("%d", &T);
     
     for (test_case = 1; test_case <= T; ++test_case)
     {
