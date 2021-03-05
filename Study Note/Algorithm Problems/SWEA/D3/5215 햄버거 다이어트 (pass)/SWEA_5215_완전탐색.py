@@ -26,6 +26,4 @@ for test_case in range(1, T + 1):
             if i & (1 << j):
                 s += score[j]
                 k += kcal[j]
-        if k <= L:
-            result.append(s)
     print('#{} {}'.format(test_case, max(result)))
