@@ -39,6 +39,9 @@ for test_case in range(1, T + 1):
                         arr[k][l] = 0
                 c_cnt = 0
 
+    # res.sort(key=lambda a: (a[0] * a[1], a[0]))
+
+    # sort
     for i in range(len(res) - 1, 0, -1):
         max_mat = 0
         max_index = 0
