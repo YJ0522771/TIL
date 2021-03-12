@@ -2,14 +2,20 @@
 long long int map[21][2];
 int select[21];
 int N;
+long long int res;
 
-long long int solve(int cur_N, int current)
+void solve(int cur_N, int current)
 {
-    int i, j;
-    long long int temp, local_min = 80000000000, x = 0, y = 0;
+    int i;
+    long long int temp, x, y;
+
+    if (current > N)
+        return;
     
     if (N / 2 == cur_N)
     {
+        x = 0;
+        y = 0;
         for (i = 1; i <= N; i++)
         {
             if (select[i])
@@ -23,29 +29,24 @@ long long int solve(int cur_N, int current)
                 y -= map[i][1];
             }
         }
-        return (x * x) + (y * y);
+        temp = (x * x) + (y * y);
+        if (res > temp)
+            res = temp;
+        return;
     }
     
-    if (N - current < (N / 2) - cur_N)
-        return local_min;
-    
-    for (i = 1; i <= N - current; i++)
+    for (i = 1; i >= 0; i--)
     {
-        for (j = 1; j >= 0; j--)
-        {
-            select[i] = j;
-            temp = solve(cur_N + j, current + i);
-            if (temp < local_min)
-                local_min = temp;
-        }
+        select[current + 1] = i;
+        solve(cur_N + i, current + 1);
     }
-    return local_min;
+    return;
 }
 
 int main(void)
 {
 	int test_case;
-	int T, i;
+	int T, i, j;
 
 	scanf("%d", &T);
 
@@ -57,8 +58,9 @@ int main(void)
         
         for (i = 1; i <= N; i++)
             select[i] = 0;
-
-        printf("#%d %lld\n", test_case, solve(0, 0));
+		res = 80000000000;
+        solve(0, 0);
+        printf("#%d %lld\n", test_case, res);
 	}
 	return 0;
 }
