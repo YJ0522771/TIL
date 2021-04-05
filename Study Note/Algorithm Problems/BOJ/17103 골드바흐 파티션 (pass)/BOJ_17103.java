@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class BOJ_17103 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // 초기값 false

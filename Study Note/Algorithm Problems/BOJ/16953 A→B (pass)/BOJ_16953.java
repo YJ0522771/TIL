@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class Main {
+public class BOJ_16953 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long A, B;
         A = sc.nextLong();
-	    B = sc.nextLong();
+        B = sc.nextLong();
 
         int count = 1;
         while(B > A)
