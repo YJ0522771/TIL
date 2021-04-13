@@ -1,5 +1,8 @@
 import sys
+from datetime import datetime
 sys.stdin = open("1242_input.txt", "r")
+
+start_time = datetime.now()
 
 d_rate = [[3, 2, 1, 1], [2, 2, 2, 1], [2, 1, 2, 2], [1, 4, 1, 1], [1, 1, 3, 2],
           [1, 2, 3, 1], [1, 1, 1, 4], [1, 3, 1, 2], [1, 2, 1, 3], [3, 1, 1, 2]]
@@ -92,5 +95,5 @@ for test_case in range(1, T + 1):
             res += sum(code)
     print('#{} {}'.format(test_case, res))
 
-
+print(datetime.now() - start_time)
 
