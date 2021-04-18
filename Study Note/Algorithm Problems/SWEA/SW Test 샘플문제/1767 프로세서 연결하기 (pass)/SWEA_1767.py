@@ -3,7 +3,6 @@ import datetime
 sys.stdin = open('input.txt', 'r')
 
 
-
 def search_path():
     global path_state
     for core in cores:

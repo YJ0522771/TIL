@@ -51,13 +51,13 @@ for test_case in range(1, T + 1):
     # ////////////////////////////////////////////////////////////
     N = int(input())
     M = int(input())
+    ee = [tuple(map(int, input().split())) for _ in range(M)]
     edges = {}
     for i in range(1, N + 1):
         edges[i] = []
-    for _ in range(M):
-        s, e, v = map(int, input().split())
-        edges[s].append((s, e, v))
-        edges[e].append((e, s, v))
+    for e in ee:
+        edges[e[0]].append((e[0], e[1], e[2]))
+        edges[e[1]].append((e[1], e[0], e[2]))
 
     heap = [0]
     visit = [False] * (N + 1)
