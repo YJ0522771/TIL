@@ -25,7 +25,7 @@ for test_case in range(1, T + 1):
         visit = [0] * (N  + 1)
         visit[i] = 1
         d = search(adj, N, visit, 1, i)
-        print(i, d)
+        # print(i, d)
         if max_dep < d:
             max_dep = d
     print('#{} {}'.format(test_case, max_dep))
