@@ -59,6 +59,18 @@ switch (조건) {
 
 ## 반복문
 
+### `while`
+
+```javascript
+while (조건) {
+    // 실행 코드
+}
+```
+
+* 블록 스코프 생성.
+
+
+
 ### `for`
 
 ```javascript
@@ -72,11 +84,14 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
+* 블록 스코프 생성.
+
 
 
 ### `for ... in`
 
-* 키 값을 순회
+* 객체의 속성을 순회.
+* 배열 순회도 가능하지만, 순서대로 순회한다는 보장이 없다.
 
 ```javascript
 const order = {
@@ -89,9 +104,27 @@ for (let key in order) {
 }
 ```
 
+* object의 키 값을 순회.
+* value 순회 방법 : `(object).values()`
+* key, value 모두 순회 : `(object).entries()`
+
+* 블록 스코프 생성.
 
 
 
+### `for ... of`
+
+* 배열 순회.
+
+```javascript
+const nums = [1, 2, 3, 4, 5]
+
+for (let num of nums) {
+    // 1, 2, 3, 4, 5
+}
+```
+
+* 블록 스코프 생성.
 
 
 
