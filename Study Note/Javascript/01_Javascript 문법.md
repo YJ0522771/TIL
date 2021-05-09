@@ -6,8 +6,7 @@
 
 ### Primitive Type
 
-* object가 아닌 기본 타입.
-* 변수에 값으로 저장됨.
+> object가 아닌 기본 타입. 변수에 값으로 저장됨.
 
 
 
@@ -18,8 +17,6 @@
 
 
 
-
-
 ### Reference Type
 
 * object 타입.
@@ -27,7 +24,7 @@
 
 
 
-### 자동 형변환
+### Boolean으로의 자동 형변환
 
 | type        |  `false`   |  `true`   |
 | :---------- | :--------: | :-------: |
@@ -65,7 +62,52 @@
 
 ## 연산자
 
+###  할당 연산자 (`+=`, `-=`, `*=`, `/=`, `++`, `--`)
 
+
+
+### 비교 연산자 (`>`, `<`)
+
+* 결과값을 boolean으로 반환.
+* 문자열 비교의 경우, 사전 순서가 빠른 것, 소문자보다 대문자가 더 작은 것으로 취급 됨. (ASCII 코드 순이라 생각하면 됨.)
+* ex) `'a' > 'b'` : false, `'a' > 'A'` : true
+
+
+
+### 동등 비교 연산자 (`==`)
+
+* 두 피연산자가 같은 값으로 되어있는가를 평가. 
+* 자동 형변환이 이루어짐.
+* ex) `10 == '10'` : true
+
+
+
+#### 자동 형변환 예시
+
+* `100 + '100' = '100100'`
+* `true + 10 = 11`
+
+
+
+### 일치 비교 연산자 (`===`)
+
+* 자동 형변환이 이루어지지 않는 비교 연산자.
+* 두 비교 대상의 자료형과 값이 모두 같은 지를 비교.
+* 다른 언어에서의 `==`과 같다.
+
+
+
+### 논리 연산자 (`&&`, `||`, `!`)
+
+* `and`, `or`, `not`
+
+
+
+### 삼항 연산자 (Ternary Operator)
+
+```javascript
+(조건)? (참일 경우) : (거짓일 경우)
+```
 
 
 
@@ -260,3 +302,187 @@ const func = name => `My name is ${name}.`
 * `.includes(x)` : x가 해당 배열에 있는 지를 `true / false`로 반환.
 * `.indexOf(x)` : 배열에서 가장 처음에 있는 x의 인덱스 반환. 없을 경우 `-1` 반환.
 * `.join(separator)` : 배열의 모든 원소를 `separator`로 연결하여 반환. 기본 값은 `,`(쉼표).
+
+
+
+### Array Helper Methods
+
+* 배열을 순회하면서 callback 함수를 수행.
+
+
+
+#### `forEach`
+
+> 원소를 순회하며 각 원소에 대해 함수를 실행.
+
+```javascript
+array.forEach( function (element[, index[, array]]) {
+    // 로직 수행
+})
+```
+
+
+
+#### `map`
+
+> 각 원소에 대해 함수를 실행하고, `return` 값으로 이루어진 새로운 배열을 반환.
+
+```javascript
+const newArray = array.map( function (element[, index[, array]]) {
+    // 로직 수행
+    return newElement
+})
+```
+
+
+
+#### `filter`
+
+> callback 함수의 `return` 값이 참인 원소로만 이루어진 배열 반환.
+
+```javascript
+const trueArray = array.filter( function (element[, index[, array]]) {
+    // 로직 수행
+    return (조건)
+})
+```
+
+
+
+#### `reduce`
+
+> 원소를 순회하면서 수행한 로직에서, 누적되는 값을 설정 가능.
+
+```javascript
+const finalAcc = array.reduce( function (acc, element[, index[, array]]) {
+    // 로직 수행
+    return nextAcc
+}[, initialValue])
+```
+
+* `acc` : 이전 원소에 대한 callback 함수의 return 값.
+* `initialValue` : acc의 초기값. 선언하지 않으면 배열의 첫 원소가 할당. (빈 배열에 대해 reduce를 할 경우 에러 발생.)
+
+
+
+#### `find`
+
+> 원소들 중 조건에 맞는 값을 반환.
+>
+> 여러개일 경우 가장 처음 원소를 반환.
+
+```javascript
+const trueValue = array.find( function (element[, index[, array]]) {
+    // 로직 수행
+    return (조건)
+})
+```
+
+
+
+#### `some`
+
+> 원소들 중, 하나라도 조건에 대해 참인 원소가 있으면 `true`를 반환.
+>
+> 참인 원소가 하나도 없으면 `false`를 반환.
+
+```javascript
+const isThereTrue = array.some( function (element[, index[, array]]) {
+    // 로직 수행
+    return (조건)
+})
+```
+
+
+
+#### `every`
+
+> 원소들이 조건에 대해 모두 참이면 `true`를 반환.
+>
+> 하나라도 거짓인 원소가 있으면 `false`를 반환.
+
+```javascript
+const isEveryTrue = array.every( function (element[, index[, array]]) {
+    // 로직 수행
+    return (조건)
+})
+```
+
+
+
+---
+
+
+
+##  객체
+
+* python의 dictionary와 유사. 
+* key는 문자열만 가능.
+
+
+
+### 객체 관련 ES6 문법
+
+* key와 value에 할당할 변수의 이름이 같으면 축약 가능.
+
+```javascript
+const num1 = 10
+
+// const nums = {
+//     num1: num1,
+// }
+
+const nums = {
+    num1,
+}
+```
+
+
+
+* method 선언 시, function 키워드 생략 가능.
+
+```javascript
+const obj = {
+//     method1: function () {
+//         // code
+//     }
+    method1() {
+        // code
+    }
+}
+
+obj.method1()
+```
+
+
+
+* key를 동적으로 생성 가능.
+
+```javascript
+const key = 'keyName'
+const value = 100
+
+const obj = {
+    [key]: value,
+}
+```
+
+
+
+* 객체의 속성을 key와 같은 변수에 할당할 때
+
+```javascript
+const obj = {
+    key1: 'value1',
+    key2: 'value2',
+}
+
+const { key1 } = obj
+const { key2 } = obj
+```
+
+
+
+* JSON → 객체 : `JSON.parse()`
+* 객체 → JSON : `JSON.stringify()`
+
