@@ -49,10 +49,10 @@
 | 스코프 | 블록 스코프 | 블록 스코프 | 함수 스코프 |
 
 * var는 호이스팅이 발생하므로, 사용하지 않는 것을 권장.
-
-* **호이스팅** : 
-
-
+* **호이스팅** : 스코프 내부에 있는 선언들을 모두 스코프 내의 코드의 최상단으로 올림.
+  * `var`로 선언된 변수만 해당됨.
+  * 변수 선언 전에 해당 변수를 사용하는 코드를 작성하여도 작동한다.
+  * 하지만 값 할당은 되지 않은 상태이므로, 예상치 못한 동작을 발생시킨다.
 
 
 
@@ -235,6 +235,10 @@ for (let num of nums) {
 
 
 
+---
+
+
+
 ## 함수
 
 * 선언식
@@ -279,6 +283,8 @@ const func = name => `My name is ${name}.`
 ```
 
 
+
+---
 
 
 
@@ -369,7 +375,7 @@ const finalAcc = array.reduce( function (acc, element[, index[, array]]) {
 
 > 원소들 중 조건에 맞는 값을 반환.
 >
-> 여러개일 경우 가장 처음 원소를 반환.
+> 여러 개일 경우 가장 처음 원소를 반환.
 
 ```javascript
 const trueValue = array.find( function (element[, index[, array]]) {
@@ -469,7 +475,7 @@ const obj = {
 
 
 
-* 객체의 속성을 key와 같은 변수에 할당할 때
+* 객체의 속성을 key와 이름이 같은 변수에 할당할 때
 
 ```javascript
 const obj = {
