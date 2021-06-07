@@ -1,4 +1,4 @@
-# 1. Web - HTML
+# 1. HTML
 
 > Hyper Text Markup Language 의 약자.
 >
