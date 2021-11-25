@@ -58,6 +58,10 @@ finally:
 
 
 
+---
+
+
+
 ## File Handling
 
 * 종류 : **binary**, **text**
@@ -130,3 +134,66 @@ f = open('파일 경로', 'w', encoding='포맷')
 * 데이터, 객체 등의 정보를 다음 실행 시에도 사용할 수 있도록 파일로 저장.
 * `.pickle` 파일.
 * 영속화(persistence)
+
+
+
+---
+
+
+
+## Log Handling
+
+### Log
+
+* 프로그램이 실행되는 동안 일어나는 정보 기록.
+
+
+
+### logging module
+
+* 기본 로그 관리 모듈
+* 프로그램 진행 상황에 따라 다른 레벨의 로그를 출력
+* **logging level** : 사용자에게 보여주는 기준 단계.
+  * debug > info > warning > error > critical
+  * **debug** : 개발 시 필요한 기록
+  * **info** : 처리가 진행되는 동안의 정보
+  * **warning** : 사용자의 잘못 등, 개발 시 의도치 않은 부분. 처리는 가능. (기본 logging level이 warning)
+  * **error** : 잘못된 처리로 인한 에러. 프로그램 동작 가능.
+  * **critical** : 데이터 손실이나 프로그램이 더이상 동작하기 어려움.
+
+* logging level 설정
+
+  * `logging.setLevel(logging.단계)` : 3.8 이후로를 사용하지 않음.
+  * `logging.basicConfig(level=logging.단계)`
+
+* stream handler
+
+  * log의 출력 방법
+
+  ```python
+  logger = logging.getLogger('main')
+  handler = logging.FileHandler('파일이름.log', mode='w', encoding='utf8')
+  logger.addHandler(handler)	# 파일로 출력
+  ```
+
+
+
+### configparser
+
+* 실행 설정을 file에 저장해서 사용하도록 함.
+
+* `configpaser.read('config 파일 이름')`
+
+* config 파일
+
+  ```
+  [SectionOne] # section 이름
+  key: value
+  ```
+
+
+
+### argparser
+
+* 콘솔 창에서 프로그램 실행 시
+* argument 입력 받아서 사용할 수 있도록 설정
