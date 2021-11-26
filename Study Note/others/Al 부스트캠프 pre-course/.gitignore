@@ -20,3 +20,4 @@ ipython_config.py
 
 *.txt
 *.pickle
+*.csv
