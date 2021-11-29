@@ -23,3 +23,54 @@
 ## Handling Shape
 
 * reshape : 데이터의 내용은 같으나 array의 shape를 바꿈.
+  * `array.reshape(차원)` ex) `array.reshape(2, 4)`
+  * -1 : 기존 array의 사이즈에 맞춰서 값을 자동으로 서정.
+* flatten : 다차원 array를 1차원으로 변환.
+  * `array.flatten()`
+
+
+
+## indexing & slicing
+
+### indexing
+
+* 콤마(,)로 indexting 가능 : array[0] [0] == array[0, 0]
+
+
+
+### slicting
+
+* 행과 열을 각각 slicing 가능.
+* ex) `array[1:3, 0:2]`
+
+
+
+## creation
+
+### arange
+
+* `np.arange(시작, 끝, step)`
+
+### zeros
+
+* 0으로 채워진 array
+
+* `np.zeros(shape=, dtype=)`
+
+### ones
+
+* 1로 채워진 array
+
+### empty
+
+* array 공간만 잡아둠
+
+### ones_like, zeros_like, empty_like
+
+* 입력 array와 크기가 같은 array 생성.
+
+### identify
+
+* 단위행렬
+* `np.identify(n=, dtype)`
+
