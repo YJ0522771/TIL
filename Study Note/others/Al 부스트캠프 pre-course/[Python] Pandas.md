@@ -94,3 +94,55 @@
 * `corrwith` : 지정 col 외의 나머지 모든 col과의 상관계수
   * `df.corrwith(col)`
 * `value_counts` : 각 값이 몇 개씩 있는 지.
+
+
+
+## groupby
+
+* 같은 데이터까리 묶음.
+* `df.groupby('col1')['col2'].sum()`  
+  * col1 : 묶음의 기준. (GROUP BY col1)
+  * col2 : 연산을 적용 받는 column. (SUM(col2))
+  * 여러 개의 column을 사용하여 묶을 수도 있음.
+
+### **hierarchical index**
+
+* 여러 개의 column을 사용하여 그룹핑을 한 경우, 결과의 index가 여러 개.
+* 각 index에는 level이 존재.
+* 특정 level을 지정하여, 해당 index를 기준으로만 연산 가능.
+
+### grouped
+
+* groupby에 의해 split된 상태.
+* aggregation : `grouped.agg(연산)`
+* transformation
+  * 개별 데이터의 변환.
+  * `grouped.transform(func)`
+* filter
+  * 특정 조건의 데이터 검색.
+  * `grouped.filter(func(조건))`
+
+
+
+## merge & concat
+
+### merge
+
+* 두 개의 데이터를 하나로 합침.
+* `pd.merge(df1, df2, on='기준 column')`
+* 기준 column의 이름이 양쪽이 다를 때 : `pd.merge(df1, df2, left_on='col1', right_on='col2')`
+* join 방법 결정. `how=''` 
+  * `left`
+  * `right`
+  * `outer`
+  * `inner` : 기본값
+* index based join
+  * index를 기준으로 merge.
+  * `right_index=True, left_index=True`
+
+### concat
+
+* 같은 column을 가지고 있는 데이터들을 붙임.
+
+
+
