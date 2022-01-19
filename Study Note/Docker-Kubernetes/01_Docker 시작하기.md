@@ -66,13 +66,13 @@ $ docker rmi (image_name)
 
 #### 3.1.1. run
 
-![image-20210824115449355](01_Docker 시작하기.assets/image-20210824115449355.png)
+![image-20210824115449355](01_Docker 시작하기.assets/image-20210824115449355-1629779608812.png)
 
 
 
 #### 3.1.2. stop
 
-![image-20210824115632114](01_Docker 시작하기.assets/image-20210824115632114.png)
+![image-20210824115632114](01_Docker 시작하기.assets/image-20210824115632114-1629779611505.png)
 
 * container의 로그도 조회 가능.
 
@@ -173,7 +173,7 @@ $ docker run -p (local host port):(container port) (image_name)
 
 * dashboard에서 container 생성 시.
 
-![image-20210824124657363](01_Docker 시작하기.assets/image-20210824124657363.png)
+![image-20210824124657363](01_Docker 시작하기.assets/image-20210824124657363-1629779616274.png)
 
 * `docker run --name httpd_test1 -p 80:80 httpd`
 
@@ -187,7 +187,7 @@ $ docker run -p (local host port):(container port) (image_name)
 
 ### 5.1.1. Dashboard에서
 
-![image-20210824130156566](01_Docker 시작하기.assets/image-20210824130156566.png)
+![image-20210824130156566](01_Docker 시작하기.assets/image-20210824130156566-1629779618951.png)
 
 
 
