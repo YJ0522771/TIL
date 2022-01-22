@@ -6,11 +6,20 @@
 
 ## LEVEL 1
 
-[01/17](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0117.md) - Day 1
-
-01/18 - Day 2 (결석)
-
-[01/19](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0119.md) - Day 3
-
-[01/20](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0120.md) - Day 4
+|                        | 월                                                           | 화    | 수                                                           | 목                                                           | 금                                                           |
+| ---------------------- | ------------------------------------------------------------ | ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| W1                     | [01/17](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0117.md) | 01/18 | [01/19](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0119.md) | [01/20](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0120.md) | [01/21](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0121.md) |
+| python basics, AI math |                                                              | 결석  |                                                              |                                                              | [실습](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0121.ipynb) |
+| W2                     |                                                              |       |                                                              |                                                              |                                                              |
+| pytorch                |                                                              |       |                                                              |                                                              |                                                              |
+| W3                     |                                                              |       |                                                              |                                                              |                                                              |
+|                        |                                                              | 설날  |                                                              |                                                              |                                                              |
+| W4                     |                                                              |       |                                                              |                                                              |                                                              |
+|                        |                                                              |       |                                                              |                                                              |                                                              |
+| W5                     |                                                              |       |                                                              |                                                              |                                                              |
+|                        |                                                              |       |                                                              |                                                              |                                                              |
+| W6                     |                                                              |       |                                                              |                                                              |                                                              |
+|                        |                                                              |       |                                                              |                                                              |                                                              |
+| W7                     |                                                              |       |                                                              |                                                              |                                                              |
+|                        |                                                              |       |                                                              |                                                              |                                                              |
 
