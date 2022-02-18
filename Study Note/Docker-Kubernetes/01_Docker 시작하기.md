@@ -136,9 +136,39 @@ $ docker rm [options] (container_name)
 
 
 
-```
+```bash
 $ docker rm --force (container_name)
 ```
+
+
+
+#### 3.2.5 start
+
+```bash
+$ docker start (container_name)
+```
+
+* 꺼진 container 실행.
+
+
+
+#### 3.2.6 restart
+
+```bash
+$ docker restart (container_name)
+```
+
+* 가동 중인 container를 재실행.
+
+
+
+#### 3.2.6 attach
+
+```bash
+$ docker attach (container_name)
+```
+
+* 가동 중인 container에 접속.
 
 
 
@@ -241,6 +271,7 @@ $ nano (file name)
 * `docker run`의 `-v` 옵션:  `(host directory):(container directory)`
 
 ```bash
-$ docker run -p 80:80 -v ~/Desktop/test:/usr/local/apache2/htdocs/ httpd
+$ docker run -p 80:80 -v C:\:/home/share httpd
 ```
 
+* 컨테이너의 디렉토리는 자동 생성.
