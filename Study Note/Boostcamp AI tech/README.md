@@ -19,9 +19,25 @@
 | W5                     | [02/14](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0214.md) | [02/15](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0215.md) | [02/16](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0216.md) | [02/17](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0217.md) | [02/18](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0218.md) |
 | AI 서비스 개발 기초    | [실습](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0214.ipynb) |                                                              |                                                              |                                                              |                                                              |
 | W6                     | [02/21](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0221.md) | [02/22](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0222.md) | [02/23](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0223.md) | [02/24](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0224.md) | [02/25](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0225.md) |
-|                        |                                                              |                                                              |                                                              |                                                              |                                                              |
+| p-stage                |                                                              |                                                              |                                                              |                                                              |                                                              |
 | W7                     | [02/28](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0228.md) | 03/01                                                        | [03/02](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0302.md) | [03/03](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0303.md) | 03/04                                                        |
-|                        |                                                              |                                                              |                                                              |                                                              |                                                              |
+| p-stage                |                                                              |                                                              |                                                              |                                                              |                                                              |
 
 * [p-stage 개인 회고](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/p_stage_wrap_up_report.md)
 * [p-stage README](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/p_stage_README.md)
+
+
+
+---
+
+
+
+## Level 2
+
+|      | 월                                                           | 화   | 수    | 목   | 금   |
+| ---- | ------------------------------------------------------------ | ---- | ----- | ---- | ---- |
+| W8   | [03/07](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0307.md) |      | 03/09 |      |      |
+| CV   |                                                              |      | 휴일  |      |      |
+| W9   |                                                              |      |       |      |      |
+| CV   |                                                              |      |       |      |      |
+
