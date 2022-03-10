@@ -34,10 +34,10 @@
 
 ## Level 2
 
-|      | 월                                                           | 화   | 수    | 목   | 금   |
-| ---- | ------------------------------------------------------------ | ---- | ----- | ---- | ---- |
-| W8   | [03/07](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0307.md) |      | 03/09 |      |      |
-| CV   |                                                              |      | 휴일  |      |      |
-| W9   |                                                              |      |       |      |      |
-| CV   |                                                              |      |       |      |      |
+|      | 월                                                           | 화                                                           | 수    | 목                                                           | 금   |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | ------------------------------------------------------------ | ---- |
+| W8   | [03/07](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0307.md) | [03/08](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0308.md) | 03/09 | [03/10](https://github.com/YJ0522771/TIL/blob/master/Study%20Note/Boostcamp%20AI%20tech/Level1/0310.md) |      |
+| CV   |                                                              |                                                              | 휴일  |                                                              |      |
+| W9   |                                                              |                                                              |       |                                                              |      |
+| CV   |                                                              |                                                              |       |                                                              |      |
 
