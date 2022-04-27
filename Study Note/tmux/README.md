@@ -15,17 +15,10 @@ $ apt-get install tmux
 ### 세션 생성
 
 * vscode에서 tmux로 터미널을 새로 열면 자동으로 세션 생성.
+* 이 경우, 세션 이름을 직접 설정할 수 없음.
 
 ```bash
 $ tmux new -s (session_name)
-```
-
-
-
-### 기존에 생성된 세션 접속
-
-```bash
-$ tmux attach -t (session_name)
 ```
 
 
@@ -44,7 +37,7 @@ $ tmux ls
 * 그냥 bash 창에 명령어 입력하면 원하는 세션 터미널이 열림.
 
 ```bash
-$ tmux attach -t (session_number)
+$ tmux attach -t (session_number or session_name)
 ```
 
 
